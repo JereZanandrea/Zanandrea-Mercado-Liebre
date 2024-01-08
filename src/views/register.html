@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href= "/css/styles.css">
+    <link rel="stylesheet" href= "/css/styles-register.css">
+    <link rel="stylesheet" href="/css/normalize.css"> 
+    
+    <title>Mercado Liebre - Registrate</title>
+</head>
+<body>
+
+    
+     <header class="main-header">
+        <div class="main-header-top-bar">
+        <p class="logo"><img width="160" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></p>
+        <p class="header-nav-bar"> <input type="text" placeholder="Search.."> </p>
+        <p class = "header-center">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Compra en cuotas y sin tarjeta de Credito 
+        </p>
+        </div>
+
+         <a class= "burger-menu">
+            <i class= "fa-solid fa-bars bg-blue padicon"></i>
+         </a>  
+
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href= "#">Ofertas</a></li>
+                <li><a href= "#">Tiendas Oficiales</a></li>
+                <li><a href= "#">Vender</a></li>
+                <li><a href= "#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href= "/register">Crea tu cuenta</a><i class="fa-regular fa-address-card rn-icon"></i> </li>
+                <li><a href= "/login">Ingresa</a><i class="fa-solid fa-right-to-bracket rn-icon"></i></li>
+                <li><a href= "#">Mis Compras</a><i class="fa-solid fa-basket-shopping rn-icon"></i></li>
+
+            </ul>
+        </nav>
+            
+    </header>
+   
+
+<form action="/" method="GET" class="main-form";>
+    <h3 class="form-main-title">Registro</h3>
+    
+    <div class="div-data">
+        <input type="text" name="name" class="data" placeholder="Nombre y Apellido" width="100%" minlength="4" maxlength="8" size="10">
+    </div>
+    <div class="div-data">
+        
+        <input type="text" name="user" class="data" placeholder="Nombre de Usuario" required minlength="4" maxlength="8" size="10">
+    </div>
+    <div class="div-data">
+        <label class="data-title">Fecha Nacimiento</label>
+        <input type="date" name="date" class="data" placeholder="Fecha Nacimiento"required>
+    </div>
+    <div class="div-data">
+        <input type="text" name="addres" class="data" placeholder="Domicilio" required minlength="4" size="10">
+    </div>
+    <div class="div-data">
+        <label class="data-title">Perfil de Usuario</label>
+        <select class="data" name="Perfil">
+            <option value="comprar">Comprar</option>
+            <option value="vender">Vender</option>
+        </select>
+    </div>
+    <div class="div-data">
+        <p class="data-title">Intereses:</p>
+
+        <div>
+            <input type="checkbox" name="Electro" id="interest"><label class="label-ckeckbox"  for="interest">Electro</label>
+        </div>
+       <div>
+            <input type="checkbox" name="Moda" id="interest"><label class="label-ckeckbox" for="interest">Moda</label>
+       </div>
+        <div>
+            <input type="checkbox" name="Hogar" id="interest"><label class="label-ckeckbox" for="interest">Hogar</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Jugueteria" id="interest"><label class="label-ckeckbox" for="interest">jugueteria</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Vida sana" id="interest"><label class="label-ckeckbox" for="interest">Vida sana</label>
+        </div>
+
+    </div>
+    <div class="div-data">
+        <label class="data-title">Foto Usuario</label>
+        <input type="file" name="avatar" accept=".jpg" required>
+    </div>
+    <div class="div-data">
+        <input type="password" name="password" class="data" placeholder="Contraseña" required minlength="4" maxlength="8" size="10">
+    </div> 
+    <div class="div-data">
+        <input type="confirm-password" name="confirm-password" class="data" placeholder="Confirmar Contraseña" required minlength="4" maxlength="8" size="10">
+    </div>
+    <div class="button-place">
+        <button class="button" type="submit"></a>Enviar</button>
+        <button class="button" type="reset">Reset</button>
+    </div>
+    
+</form>
+    
+</body>
+
+<footer class="footer-login">
+    <section>
+        <p class="footericons"><i class="fa-solid fa-credit-card"></i></p>
+        <h3>Pagá con tarjeta o en efectivo</h3>
+        <div class= "footer-text">
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+    </section>
+    <section>
+        <p class="footericons"><i class="fa-solid fa-gift"></i></p>
+        <h3>Envío gratis desde $ 2.500</h3>
+        <div class= "footer-text">
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+    </section>
+    <section>
+        <p class="footericons"><i class="fa-solid fa-user-shield"></i></p>
+        <h3>Seguridad de principio a fin</h3>
+        <div class= "footer-text">
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </div>
+</footer>
+</html>

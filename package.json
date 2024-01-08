@@ -1,0 +1,27 @@
+{
+  "name": "zanandrea-mercado-liebre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JereZanandrea/Zanandrea-Mercado-Liebre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JereZanandrea/Zanandrea-Mercado-Liebre/issues"
+  },
+  "homepage": "https://github.com/JereZanandrea/Zanandrea-Mercado-Liebre#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
